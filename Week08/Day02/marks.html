@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MARKS</title>
+</head>
+<body>
+<h1>Mark student</h1>
+
+<form action="/api/marks/create" method="post">
+    <label for="studentId">Student ID:</label>
+    <input type="number" id="studentId" name="studentId" required><br><br>
+
+    <label for="subjectId">Subject:</label>
+    <select id="subjectId" name="subjectId" required>
+        <option value="1">Introduction to Programming</option>
+        <option value="2">Logic</option>
+        <option value="3">Data Structure</option>
+        <option value="4">OOP</option>
+        <option value="5">DataBase</option>
+        <option value="6">Analysis of Digital Art and Media</option>
+        <option value="7">Interaction Design</option>
+        <option value="8">Differential Calculus</option>
+        <option value="9">Linear Algebra</option>
+        <option value="10">Discrete Mathematics</option>
+        <option value="11">Formal Languages and Logic</option>
+    </select><br><br>
+
+<!--    <label for="sessionId">Session :</label>-->
+<!--    <input type="number" id="sessionId" name="sessionId" max="4" required><br><br>-->
+
+    <label for="mark">Mark:</label>
+    <select id="mark" name="mark" required>
+        <option value="HD">HD</option>
+        <option value="D">D</option>
+        <option value="C">C</option>
+        <option value="P">P</option>
+        <option value="F">F</option>
+    </select><br><br>
+    <button type="submit">Submit</button>
+
+
+</form>
+</body>
+</html>

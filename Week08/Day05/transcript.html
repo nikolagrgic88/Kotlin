@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Transcript</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Transcript</h1>
+<h3 th:text="${name}"></h3>
+<p th:text="'Faculty: ' + ${faculty}"></p>
+<p th:text="'Campus: ' + ${campus}"></p>
+<h3>Marks</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Subject</th>
+        <th>Mark</th>
+        <th>Session</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="mark : ${marks}">
+        <td th:text="${mark.subject}"></td>
+        <td th:text="${mark.mark}"></td>
+        <td th:text="${mark.session}"></td>
+    </tr>
+
+    </tbody>
+</table>
+
+</body>
+</html>

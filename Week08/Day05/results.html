@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Profile</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Profile</h1>
+<h3 th:text="${name}"></h3>
+<h5 th:text="'Id:' + ${id}">Id: </h5>
+<h5 th:text="'Age:' + ${age}"></h5>
+<h5 th:text="'Enrolment status:' + ${enrol}"></h5>
+<h5 th:if="${currentStatus}">Current Student</h5>
+<h5 th:unless="${currentStatus}">Student is not current</h5>
+
+</body>
+</html>
